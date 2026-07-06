@@ -23,7 +23,7 @@ To build a complete database system that manages:
 - Books
 - Members
 - Borrowings
-- Employees
+
 
 ---
 
