@@ -1,38 +1,23 @@
-# 📚 Library Database System (SQL Server)
+# 📚 Library Management System - Database Portfolio
 
-## 📌 Project Overview
-This project is a complete Library Management Database system built using Microsoft SQL Server.
-
-It handles books, authors, categories, members, borrowings, and employees with relationships, stored procedures, views, and functions.
-
----
-
-## 🗄️ Database Name
-- `LibraryDB`
+## 👨‍💻 About The Project
+This project is a professional Library Management System database built using SQL Server.  
+It demonstrates real-world database design including relational modeling, stored procedures, views, and functions.
 
 ---
 
-## ⚙️ Main Features
-
-### 📚 Books Management
-- Add new books
-- Track total and available copies
-- Link books with authors and categories
-
-### 👤 Members Management
-- Store member information (name, email, phone)
-- Track registration date
-
-### 🔄 Borrowing System
-- Borrow books using stored procedure `BorrowBook`
-- Auto decrease available copies
-- Track borrow and return dates
+## 🎯 Project Goal
+To build a complete database system that manages:
+- Books inventory
+- Library members
+- Borrowing and returning process
+- Authors and categories management
 
 ---
 
-## 🧱 Database Structure
+## 🧱 Database Design
 
-### 📊 Tables
+### 📌 Main Tables
 - Authors
 - Categories
 - Books
@@ -42,45 +27,81 @@ It handles books, authors, categories, members, borrowings, and employees with r
 
 ---
 
-## 🧠 SQL Objects
+## 🔗 Relationships (ERD)
+- One Author → Many Books
+- One Category → Many Books
+- One Member → Many Borrowings
+- One Book → Many Borrowings
 
-### 🔹 Views
-- `vw_BooksFullInfo` → Shows books with author and category
-- `vw_BorrowingReport` → Shows borrowing history report
+> 📌 ERD Diagram is included in the repository.
 
-### 🔹 Functions
-- `BookStatus(BookId)` → Returns availability status
-- `CalculateLateFee(DueDate, ReturnDate)` → Calculates late days
-- `GetMemberBorrowings(MemberId)` → Returns member borrowing history
+---
+
+## ⚙️ Features Implemented
+
+### 📚 Book Management
+- Add new books
+- Track available copies
+- Link books with authors & categories
+
+### 👤 Member Management
+- Register members
+- Store contact information
+- Track registration date
+
+### 🔄 Borrowing System
+- Borrow books using stored procedure
+- Automatic stock update
+- Track borrow and return dates
+
+---
+
+## 🧠 Database Objects
 
 ### 🔹 Stored Procedures
-- `AddBook` → Adds a new book
-- `BorrowBook` → Handles book borrowing logic
+- `AddBook`
+- `BorrowBook`
+
+### 🔹 Functions
+- `BookStatus`
+- `CalculateLateFee`
+- `GetMemberBorrowings`
+
+### 🔹 Views
+- `vw_BooksFullInfo`
+- `vw_BorrowingReport`
 
 ---
 
-## 🔗 Relationships
-- Books → Authors (Foreign Key)
-- Books → Categories (Foreign Key)
-- Borrowings → Books + Members (Foreign Keys)
+## 📊 Technologies Used
+- Microsoft SQL Server
+- T-SQL
+- Database Design Principles
 
 ---
 
-## 🚀 How to Run
+## 📸 ERD Diagram
+(Add your ERD image here: ERD.png)
 
+---
+
+## 🚀 How to Run This Project
 1. Open SQL Server Management Studio (SSMS)
-2. Create a new query
-3. Paste the file `library.sql`
-4. Execute the script
-5. Database `LibraryDB` will be created automatically
+2. Run `library.sql`
+3. Database `LibraryDB` will be created automatically
+4. Start querying tables and procedures
 
 ---
 
-## 💡 Notes
-- This project is for learning SQL Server database design.
-- Includes advanced concepts: Views, Functions, Stored Procedures, Constraints.
+## 💡 What I Learned
+- Relational database design
+- Foreign keys & constraints
+- Stored procedures & functions
+- Real-world system modeling
 
 ---
 
 ## 👨‍💻 Author
-Your Name Here
+muhanad-nabeel
+
+📌 GitHub: https://github.com/Muhanad-nabeel
