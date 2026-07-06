@@ -1,4 +1,3 @@
-<img width="1536" height="1024" alt="diagramsERD png" src="https://github.com/user-attachments/assets/03a0eff0-2047-4177-8664-775fa4fbd390" />
 # 📚 Library Management System - Database Portfolio
 
 ## 👨‍💻 About The Project
@@ -27,6 +26,7 @@ To build a complete database system that manages:
 
 
 ---
+
 
 ## 🔗 Relationships (ERD)
 - One Author → Many Books
